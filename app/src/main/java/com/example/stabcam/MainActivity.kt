@@ -92,9 +92,7 @@ class MainActivity : ComponentActivity() {
             Camera2Interop.Extender(vcBuilder).setCaptureRequestOption(
                 CaptureRequest.LENS_OPTICAL_STABILIZATION_MODE,
                 CameraMetadata.LENS_OPTICAL_STABILIZATION_MODE_ON
-            ).setCaptureRequestOption(
-                CaptureRequest.CONTROL_VIDEO_STABILIZATION_MODE,
-                CameraMetadata.CONTROL_VIDEO_STABILIZATION_MODE_ON
+            
             )
             videoCapture = vcBuilder.build()
 
